@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 8rem 1fr 5rem;
+    grid-template-rows: 5rem;
+    background-color: #fff;
+    border-bottom: 10rem;
+    border-bottom: solid darkgray;
+    border-width: 1px;
+}
+
+header figure{
+    margin: auto;
+}
+
+h1{
+    font-family: nssans, sans-serif;
+    display: none;
+    grid-column-start: 2;
+    color: #282C9E;
+    font-size: 2rem;
+}
+
+nav{
+    grid-column-start: 4;
+    margin: auto;
+    font-family: nssans, sans-serif;
+    font-size: 20px;
+    color: #282C9E;
+}
+
+ul{
+    margin-right: 2rem;
+    margin: inherit;
+}
+
+li{
+    display: inline-block;
+    padding: 20px;
+}
+
+li img:first-child{
+    width: 1rem;
+    margin: auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10rem 10rem;
+}
+
+main div{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 20rem;
+    background-color: #F4F241;
+    margin: auto;
+    width: 100%;
+    display: grid;
+}
+
+div form{
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 4em 4em 4em 1fr;
+    grid-template-rows: 4rem 4rem;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+input:first-child{
+    width: 100%;
+    height: 4rem;
+    border-radius: 5px;
+    /padding: 0 1rem 0 1rem;
+    font-family: nssans, sans-serif;
+    font-size: 1.4rem;
+    color: #282C9E;
+    border: none;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+}
+
+select{
+    margin: auto;
+    background-color: #0063D3;
+    width: 50px;
+    height: 4rem;
+    width: 100%;
+    border-radius: 8px;
+    color: #fff;
+    grid-row-start: 2;
+}
+
+#filteren{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+}
+
+#sorteren{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: auto;
+}
+
+#tijd{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: auto;
+}
+
+.button{
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    background-color: #0063D3;
+    color: #fff;
+    height: 4rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-family: nssans, sans-serif;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+}
+
+a{
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #282C9E;
+}
+
+section{
+    height: 30rem;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    font-family: nssans;
+    background-image: url(images/lepraCover.jpeg);
+    background-size: cover;
+    padding: 0 1rem 1rem 1rem;
+    border: solid darkgray;
+    border-width: 1px;
+}
+
+#section1{
+    grid-row-start: 2;
+    top: -3rem;
+    position: relative;
+}
+
+#section2{
+    grid-row-start: 3;
+}
+
+h2{
+    background-color: #0063D3;
+    box-sizing: content-box;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 2.375rem;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 10rem;
+    font-weight: 700;
+}
+
+section button{
+    background-color: #F4F241;
+    float: left;
+    background-image: url(images/bookmark.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+    h1{
+        display: inline-block;
+    }
+    #section2{
+        grid-column-start: 2;
+    }
+}
